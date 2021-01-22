@@ -1,0 +1,41 @@
+<h1>Where the Posts are</h1>
+
+
+<ul>
+  <% @posts.each do |post| %>
+    <% if user_signed_in? %>
+    Author:
+    <%= post.author %>  
+    <div>
+    
+    <%= post.body %> 
+    </div>
+    <br><br>
+    
+    <% else %>
+    
+    
+    <div>
+    
+    <%= post.body %> 
+    </div>
+    <br><br>
+
+  
+  <% end %>
+  <% end %>
+</ul>
+
+
+<% if current_user %>
+<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %><br><br>
+<% else %>
+<%= link_to 'Sign Up', new_user_registration_path %><br><br>
+
+<%= link_to 'Sign In', new_user_session_path %><br><br>
+<% end %>
+
+<%= link_to 'New Post', new_post_path %>
+
+
+

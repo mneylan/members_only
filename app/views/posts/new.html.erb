@@ -1,0 +1,12 @@
+<h1>This is where a new post is made</h1>
+
+<%= form_for @post do |f| %>
+  
+  <%= f.label 'Author:' %>
+  <%= f.text_field :author, placeholder: current_user.username %><br><br>
+  
+  <%= f.label 'Body:' %>
+  <%= f.text_area :body %><br><br>
+
+  <%= f.submit "Submit" %>
+<% end %>

@@ -1,24 +1,5 @@
-# README
+Members Only! Project for The Odin Project.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+If you are a member and logged in you can write posts and view other posts with the authors' names visible.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you are not a member, you cannot write posts. You can view posts but not see who wrote them.
